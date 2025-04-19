@@ -22,15 +22,11 @@ const isDocFooterVisible = computed(() => {
         <div class="left-section">
           <div class="visitor-container">
             <img v-if="!DEV && visitor" class="visitor"
-              :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}.${pageId}`"
-              title="当前页面累计访问数"
+              :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}.${pageId}`" title="当前页面累计访问数"
               @error="handleImageError" />
           </div>
-          <div v-if="footer?.message" class="footer-message">
-            {{ footer.message }}
-          </div>
+          <div v-if="footer?.message" class="footer-message"> {{ footer.message }} </div>
         </div>
-        
         <div v-if="footer?.copyright" class="copyright-section">
           <span class="copyright-icon">©</span>
           <span class="copyright-text">{{ footer.copyright }}</span>
@@ -41,7 +37,6 @@ const isDocFooterVisible = computed(() => {
 </template>
 <style scoped>
 .m-doc-footer-wrapper {
-  background: linear-gradient(to right, var(--vp-c-bg-soft) 30%, transparent);
   backdrop-filter: blur(8px);
   border-radius: 12px 12px 0 0;
   margin-top: 2rem;
@@ -71,7 +66,7 @@ const isDocFooterVisible = computed(() => {
   padding: 4px;
   background: var(--vp-c-bg);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .visitor {
@@ -110,16 +105,16 @@ const isDocFooterVisible = computed(() => {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .left-section {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .visitor {
     margin: 0 auto;
   }
-  
+
   .footer-message {
     width: 100%;
   }
@@ -129,7 +124,7 @@ const isDocFooterVisible = computed(() => {
   .m-doc-footer {
     padding: 1rem;
   }
-  
+
   .copyright-section {
     flex-wrap: wrap;
     justify-content: center;

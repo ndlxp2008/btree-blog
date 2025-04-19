@@ -15,36 +15,36 @@ hero:
     - text: 掘金
       link: https://juejin.cn/user/2005936359093832
       theme: alt
-    - text: 前端导航
+    - text: 工具导航
       link: /nav/
       theme: alt
     - text: GitHub
       link: /test
       theme: alt
 features:
-  - icon: 📖
-    title: 前端物语
-    details: 整理前端常用知识点<small>（面试八股文）</small><br />如有异议按你的理解为主，不接受反驳
-    link: https://notes.fe-mm.com/fe/javascript/types
-    linkText: 前端常用知识
-  - icon: 📘
+  - icon: 🏗️
+    title: 全站知识点
+    details: 系统整理前后端开发必备知识体系<small></small><br />涵盖前端、后端、数据库、网络等核心知识点
+    link: /knowledge/knowledge-nav
+    linkText: 常用知识
+  - icon: 🔍
     title: 源码阅读
-    details: 了解各种库的实现原理<br />学习其中的小技巧和冷知识
+    details: 深入剖析主流框架和库的实现原理<br />学习优秀代码的设计思想和最佳实践
     link: https://notes.fe-mm.com/analysis/utils/only-allow
     linkText: 源码阅读
-  - icon: 💡
-    title: Workflow
-    details: 在工作中学到的一切<small>（常用库/工具/奇淫技巧等）</small><br />配合 CV 大法来更好的摸鱼
-    link: https://notes.fe-mm.com/workflow/utils/library
-    linkText: 常用工具库
-  - icon: 🧰
-    title: 提效工具
-    details: 工欲善其事，必先利其器<br />记录开发和日常使用中所用到的软件、插件、扩展等
+  - icon: 🤖
+    title: 嵌入式世界
+    details: 探索嵌入式开发板和电调控制系统<br />从入门到精通STM32、Arduino、电机驱动与PID调参
+    link: /embedded/
+    linkText: 嵌入式专区
+  - icon: ⚙️
+    title: 工欲善其事，必先利其器
+    details: 精选开发必备工具和实用技巧<br />提升开发效率，让工作事半功倍
     link: https://notes.fe-mm.com/efficiency/online-tools
+    linkText: 工具配置专区
 ---
 
 <style>
-/*爱的魔力转圈圈*/
 .m-home-layout .image-src:hover {
   transform: translate(-50%, -50%) rotate(666turn);
   transition: transform 59s 1s cubic-bezier(0.3, 0, 0.8, 1);
