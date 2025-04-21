@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { useData, inBrowser } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide } from 'vue'
+import { nextTick, provide, computed } from 'vue'
 import Giscus from '@giscus/vue'
 
 import { usePageId } from '../composables'
 
 import MNavVisitor from './MNavVisitor.vue'
 import MDocFooter from './MDocFooter.vue'
+import MGoTop from './MGoTop.vue'
+import MDHBackgroud from './MDHBackgroud.vue'
 
 const { Layout } = DefaultTheme
-const { isDark, theme, frontmatter } = useData()
+const { isDark, theme, frontmatter, page } = useData()
 const pageId = usePageId()
 
 const { comment } = theme.value
@@ -68,11 +70,17 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       https://vitepress.dev/zh/guide/extending-default-theme#layout-slots
       https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/Layout.vue
     -->
+    <template #home-hero-after>
+      <MDHBackgroud />
+    </template>
     <template #nav-bar-title-after>
       <MNavVisitor />
     </template>
     <template #doc-after>
       <MDocFooter />
+    </template>
+    <template #doc-footer-before>
+      <MGoTop />
     </template>
   </Layout>
 </template>
