@@ -7,8 +7,6 @@
     "@giscus/vue": "^3.0.0",
     "@mdit-vue/shared": "^0.12.1",
     "@types/node": "^18.18.6",
-    "@types/vue": "2",
-    "@vitejs/plugin-vue": "^5.2.3",
     "autoprefixer": "^10.4.17",
     "cross-env": "^7.0.3",
     "husky": "^8.0.3",
@@ -19,8 +17,8 @@
     "sass": "^1.69.4",
     "tailwindcss": "^3.4.1",
     "vite-plugin-markdown-preview": "^1.1.1",
-    "vitepress": "^1.6.3",
-    "vue": "^2.7.16"
+    "vitepress": "^1.0.1",
+    "vue": "^3.4.21"
   },
   "prettier": "@femm/prettier",
   "lint-staged": {
@@ -34,10 +32,5 @@
     "preview": "vitepress preview docs --port 5173",
     "prepare": "husky install",
     "format": "prettier --write ."
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "vite-plugin-markdown-preview@1.1.1": "patches/vite-plugin-markdown-preview@1.1.1.patch"
-    }
   }
 }

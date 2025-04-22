@@ -30,7 +30,7 @@ features:
   - icon: 🔍
     title: 源码阅读
     details: 深入剖析主流框架和库的实现原理<br />学习优秀代码的设计思想和最佳实践
-    link: https://notes.fe-mm.com/analysis/utils/only-allow
+    link: /source-code/source-code-nav
     linkText: 源码阅读
   - icon: 🤖
     title: 嵌入式世界
@@ -40,7 +40,7 @@ features:
   - icon: ⚙️
     title: 工欲善其事，必先利其器
     details: 精选开发必备工具和实用技巧<br />提升开发效率，让工作事半功倍
-    link: https://notes.fe-mm.com/efficiency/online-tools
+    link: /tools-setting/tools-setting-nav
     linkText: 工具配置专区
 ---
 
